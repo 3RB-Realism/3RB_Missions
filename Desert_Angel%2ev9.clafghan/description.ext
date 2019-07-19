@@ -1,0 +1,42 @@
+
+
+
+
+//BIS_fnc_getRespawnInventories_list
+ //_default = [-1,[],[],[],[]];
+ //_globalInventories = missionnamespace getvariable ["BIS_fnc_getRespawnInventories_list",_default];
+// missionnamespace getvariable "BIS_fnc_getRespawnInventories_listWEST"
+//call bis_fnc_objectSide;
+
+respawn = "BASE";
+respawndelay = "1";
+
+class cfgFunctions
+{
+	#include "Wolfxe\functions.hpp"
+	
+#include "LT\cfgfunctions.hpp"
+
+	#include "LARs\override_VA_templates\functions\functions.hpp"
+    	#include "modules\grad-persistence\cfgFunctions.hpp"
+};
+#include "Wolfxe\Includes.hpp"
+
+#include "LT\LTmenu.hpp"
+#include "LARs\override_VA_templates\settings.hpp"
+
+class CfgGradPersistence {
+    missionTag = "SatOP07071933";
+    loadOnMissionStart = 1;
+    missionWaitCondition = "";
+    playerWaitCondition = "";
+    saveUnits = 2;
+    saveVehicles = 2;
+    saveContainers = 0;
+    saveStatics = 2;
+    saveMarkers = 2;
+
+    savePlayerInventory = 1;
+    savePlayerDamage = 0;
+    savePlayerPosition = 1;
+};
