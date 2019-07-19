@@ -1,0 +1,4 @@
+
+//Put these lines in your description.ext file
+#include "AF_Keypad\AF_KP_defines.hpp"
+#include "AF_Keypad\AF_KP_dialogs.hpp"
